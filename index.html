@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title> º LVWNAXYM 1996 º </title>
+
+
+    <!-- Imagen 1️⃣ (agujero)
+
+Agujeros y escisión:
+las falacias-geometrías
+nos habitan el aburrimiento
+con sonido THX
+y colores extraídos
+lixiviados
+de afuera
+hacia dentro:
+es el iris maldito.
+
+Imagen 2️⃣ (casino chips 🎰🎲)
+
+fui a apostar el yo
+en el casino de la diáspora
+pa'ver si con eso
+me curaba la anemia
+y la palidez que me causó
+el grid de la gentrificación
+pero me quedé gentefied
+gentrified
+prietified
+(emociones-solidified)
+la basura y la pus, infravaloradas
+en flotación, sedentes
+carentes
+y aún así
+aquí estamos...todes.
+
+Imagen 3️⃣ (en construcción 👷🏻‍♀️)
+
+de mi cuerpo digital
+una "alguien" se acumula
+mientras corrupta,
+me estira y distiende...
+y así quedo, enjuta
+(luego) se desentiende
+en los datos traficados
+transhumantes...
+ya los vi y nos vimos
+los ando guardando
+pa'cuando regresemos
+a tejer. -->
+
+<!-- Libreria de A-FRAME seguido de componentes(no tengo ninguno en mi codigo) -->
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+
+<!-- LIBRERIA PARA CAMINA MAS RAPIDO
+     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+     <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+    -->
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/super-hands@2.0.2/dist/super-hands.min.js"></script>
+
+    <!-- PAQUETERIA A-FRAME COMPONENT -PARA PARTICULAS -->
+
+    <script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+    <script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+    <script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+
+    <script src="js/aframe-spe-particles-component.js"></script>
+    <script src="js/entended-was-contols.js"></script>
+
+     <!--ESTE ES EL CODIGO PARA GIFS  -->
+     <script src="ttps://rawgit.com/mayognaise/aframe-gif-component/master/dist/aframe-gif-component.min.js"></script>
+     <script src="https://rawgit.com/mayognaise/aframe-gif-shader/master/dist/aframe-gif-shader.min.js"></script>
+     <script  src ="https://unpkg.com/aframe-spritesheet-component/dist/aframe-spritesheet-component.min.js " ></script> 
+
+</head>
+<body>
+
+    <assets>
+
+<!-- IMAGENES -->
+
+     <img id = "66" src = "./1/G1.jpeg" >
+
+      <img id="F" src="./1/FFF.jpeg">
+
+      <img id="CS" src="./1/CS.png">
+
+      <img id="CUTE" src="./1/CUTHE.jpeg">
+
+      <img id="C2" src="./1/C2.jpeg">
+
+      <img id="2000" src="./1/2000.jpeg">
+
+      <img id="1999" src="./1/1999.png">
+      
+      <img id="alas" src="./1/alas.jpg">
+
+      <img id="FON" src="./1/FON.jpeg">
+      <img id="CUR" src="./1/CUR.jpeg">
+      <img id="botella" src="./1/botella.jpeg">
+      <img id="desing" src="./1/desing.jpeg">
+
+
+      <!--AUDIO-->
+
+      <video id="ms" autoplay loop="true" src="./assets/realman.mp4" ></video>
+
+
+      <!-- MODELOS -->
+
+      <a-ssets-item id="Bruja" src="./1/Bruja.gltf"></a-ssets-item>
+      <a-ssets-item id="Tamagochi" src="./assets/Tamagochi.gltf"></a-ssets-item>
+
+      <a-ssets-item id="Calabaza" src="./1/Calabaza.gltf"></a-ssets-item>
+      <a-ssets-item id="GATUTU" src="./1/GATUTU.gltf"></a-ssets-item>
+      <a-ssets-item id="CalabazaHo" src="./1/CalabazaHo.gltf"></a-ssets-item>
+
+      <a-ssets-item id="ROCKA" src="./1/ROCKA.gltf" ></a-ssets-item>
+      <a-ssets-item id="Sky1996" src="./1/ky1996.gltf" ></a-ssets-item>
+      <a-ssets-item id="triangulo" src="./1/triangulo.gltf" ></a-ssets-item>
+      <a-ssets-item id="SERPIENTE" src="./1/SERPIENTE.gltf" ></a-ssets-item>
+      <a-ssets-item id="MAQUI" src="./1/MAQUI.gltf" ></a-ssets-item>
+      <a-ssets-item id="Moradas" src="./1/Bubbles.gltf" ></a-ssets-item>
+      <a-ssets-item id="Moradas" src="./1/Moradas.gltf" ></a-ssets-item>
+      <a-ssets-item id="PLANT" src="./1/PLANT.gltf" ></a-ssets-item>
+
+      <a-ssets-item id="palm" src="./1/palm.gltf" ></a-ssets-item>
+
+      <a-ssets-item id="CONTENEDOR" src="./1/CONTENEDOR.gltf" ></a-ssets-item>
+      <a-ssets-item id="delfin" src="./1/delfin.gltf" ></a-ssets-item>
+      <a-ssets-item id="OXXO" src="./1/OXXO.gltf" ></a-ssets-item>
+      <a-ssets-item id="ROCASS" src="./1/ROCASS.gltf" ></a-ssets-item>
+      <a-ssets-item id="ESCULTURA" src="./1/ESCULTURA.gltf" ></a-ssets-item>
+
+
+
+
+    </a-assets > 
+
+    <a-scene> 
+
+
+        <a-image  src = "sheets.jpeg " hoja de sprite = " cols: 4; filas: 4; progreso: 1; " ></a-image> 
+
+
+        <a-video src="#ms" width="4" height="2" position="0 -2.5 -4" scale="2 1 1" opacity="0"></a-video>
+
+              
+        
+
+ 
+
+
+    
+
+ 
+        
+     <!-- AGUA -->
+
+  <a-entity id="ocean" ocean="density: 20; width: 50; depth: 50; speed: 4"
+        material="color: #A583F3; opacity: 0.5; metalness: 0; roughness: 1"
+        rotation="-90 0 0" scale= "3 3 3"></a-entity>
+  
+  <!-- CIELO DE LA ESCENA  -->
+
+  <a-entity id="sky" geometry="primitive: sphere; radius: 5000"
+        material="shader: gradient; topColor: 235 235 245; bottomColor: 185 185 210"
+        scale="-1 1 1"></a-entity>
+
+        <a-sky src = "#66" > </a-sky >
+
+           
+></a-light>
+  
+  <!-- LUZ DE LA ESCENA <a-entity id="light" light="type: ambient; color: #888"></a-entity> -->
+       <!-- EL CIELO ORIGINAL   -->
+       <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop:true; dur:10000">
+        
+        
+        
+       <a-sphere src="#F" position="-15 26 25" scale="3 3 3" ></a-sphere> 
+       <a-sphere src="#F" position="15.6 30.7 25.1" scale="3 3 3" ></a-sphere> 
+       <a-sphere src="#F" position="37 22.55 0" scale="3 3 3" ></a-sphere> 
+       <a-sphere src="#F" position="19.529 26.39 -25.17" scale="3 3 3" ></a-sphere> 
+       <a-sphere src="#F" position="-12.9 23.63 -25.73" scale="3 3 3" ></a-sphere> 
+       <a-sphere src="#F" position="-34.21 12.987 5.828" scale="3 3 3" ></a-sphere> 
+
+      </a-entity>
+
+       <a-plane src="#CS" position="0 7 -29"  scale="4 5 2" ></a-plane>
+         
+
+       <a-entity position="0 2.25 -15" particle-system="preset: dust; color: #0000FF,#00FF00,#FF0000"></a-entity>
+
+<a-entity position="0 2.25 -15" particle-system="preset: dust; texture: ./G6.png; color: #0000FF,#00FF00,#FF0000"></a-entity>
+
+      
+
+       <a-entity position="1 2 -4" spe-particles="
+       texture: images/particles/circle.png; 
+       particle-count: 400; 
+       max-age: 3; 
+       distribution: sphere; 
+       radius: 0.2;
+       color: #FF0000, #0000FF; 
+       color-spread: 1 0 0, 0 0 1; 
+       size: 0, 1, 0">
+   </a-entity>
+    </a-entity>
+
+       <!-- Piso de Flores -->
+       <a-entity id="sphere" 
+       material="color: #EFEFEF; shader: flat"
+       position="0 0.15 -5"
+       
+       animation="property: position; easing: easeInOutQuad; dir: alternate; dur: 1000; to: 0 -0.10 -5; loop: true"
+
+        src="#CUTE" position="-12 -0.5 -20" scale="0.5 0.5 0.5" ></a-cylinder>
+
+       <a-cylinder src="#CUTE"  position="-8 -0.5 -20"scale="0.5 0.5 0.5" ></a-cylinder>
+
+       <a-cylinder src="#CUTE"  position="0.9 -0.5 15" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="1-0 0.5 -1.5" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="11 0.5 0" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="4.7 0.5 -17 " scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="3 0.5 -19" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-23 0.5 -22" scale="0.5 0.5 0.5" ></a-cylinder>
+
+       <a-cylinder src="#CUTE"  position="18 0.5 9" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="8 0.5 -14" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-33 0.5 2-4" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="12 0.5 -11" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="22 0.5 11" scale="0.5 0.5 0.5" ></a-cylinder>
+
+       <a-cylinder src="#CUTE"  position="-6.553 -0.5 18.6"scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="7 0.5 25" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="2.56 0.5 35.6" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-18 0.5 27" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="15 0.5  25" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="14 0.5 14" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-19 0.5 37" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="32 0.5 27" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="30 0.5 29" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-32 0.5 40" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="-29 0.5 34" scale="0.5 0.5 0.5" ></a-cylinder>
+       <a-cylinder src="#CUTE"  position="20 0.5 20" scale="0.5 0.5 0.5" ></a-cylinder>
+
+      
+
+       </a-entity>
+
+<!-- TAGGEO DE MODELOS -->
+<a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000; velocity: 1">
+
+  
+  <a-text  position="0.0 15.6 -5" color="Pink" scale="5 5 5" value = "¡cacino chips!" ></a-text >
+
+<a-entity gltf-model= "#Sky1996"  position="41.3 70 35" rotation="0 142 0" scale="4 4 4" ></a-entity>
+<a-entity gltf-model= "#triangulo"  position="19 70 -22" rotation="0 0 0" scale="4 4 4" ></a-entity>
+</a-entity>
+
+
+<a-entity gltf-model= "#ROCKA"  position="54 0.3 50.5" rotation="0.36 122 -93" scale="4 6 5" ></a-entity>
+<a-entity gltf-model= "#ROCKA"  position="-38.5 -11.55 18" rotation="0 0 0" scale="3 3 3" ></a-entity>
+<a-entity gltf-model= "#ROCKA"  position="-77.20 -15 -79" rotation="0 45 0" scale="6 5 6" ></a-entity>
+
+
+<a-entity gltf-model= "#ROCKA"  position="" rotation="17.0 7.3 -139.4" scale="2 2 2" ></a-entity>
+<a-entity gltf-model= "#ROCKA" scale="5 6 5" position="-11.4 -24.5 -4" rotation="1.989 -32.4 -0.746" ></a-entity>
+<a-entity gltf-model= "#ROCKA"  position="-7.29 2.9 46.6" rotation="0.368 0.554 -92.6" scale="1.5 4 5" ></a-entity>
+<a-entity gltf-model= "#ROCKA" scale="6 5 4" position="12 -0.24 -68.67" rotation="0.368 0.554 -92.60" ></a-entity>
+
+<a-entity gltf-model= "#SERPIENTE"  position="23 -0.139 0" rotation="0 0 0" ></a-entity>
+<a-entity gltf-model= "#SERPIENTE"  position="18.983 0.425 30" rotation="0 10 0" ></a-entity>
+<a-entity gltf-model= "#SERPIENTE"  position="5.142 3.581 40.9" rotation="0 0 0" ></a-entity>
+
+<a-entity gltf-model= "#Bruja"  position="29 33 40" rotation="0 50.178 10" scale="2 3 2" ></a-entity>
+
+<a-entity gltf-model= "#Tamagochi"  position="25 1.44 -23" rotation="-4.914 78 20.73" scale="5 5 5" ></a-entity>
+<a-entity gltf-model= "#Calabaza"  position="19.39 29 17" rotation="0 50. 0" scale="0.5 0.5 0.5" ></a-entity>
+
+<a-entity gltf-model= "#GATUTU"  position="34.6 25 13" rotation="20.27 -27.72 28.722" scale="3 3 3" ></a-entity>
+<a-entity gltf-model= "#CalabazaHo"  position="16 20 8.663" rotation="9.119 -25.33 8.663" scale="2 2 2" ></a-entity>
+
+<a-entity gltf-model= "#CalabazaHo"  position="26.355 24. 8.465" rotation="0 10.43 0" scale="2 2 2" ></a-entity>
+ 
+<a-entity gltf-model= "#Moradas"  position="55.870 0 -81.70" rotation="0 0 15" scale="8 8 8" ></a-entity>
+<a-entity gltf-model= "#Moradas"  position="50 -7 -89" rotation="0 0 15" scale="8 8 8" ></a-entity>
+<a-entity gltf-model= "#Moradas"  position="60 -7 -85" rotation="0 0 15" scale="8 8 8" ></a-entity>
+<a-entity gltf-model= "#Moradas"  position="45 -7 82" rotation="0 0 15" scale="8 8 8" ></a-entity>
+<a-entity gltf-model= "#Moradas"  position="65 -7 79" rotation="0 0 15" scale="8 8 8" ></a-entity>
+
+<a-cylinder src="#C2"  position="75 16 -51.25" scale="20 0.3 20" rotation="0 0 90" ></a-cylinder>
+
+<a-entity gltf-model= "#palm"  position="-73 0.99 -73.32" rotation="0 90 0" scale="1 1 1" ></a-entity>
+<a-entity gltf-model= "#palm"  position="78 -2 35.437" rotation="0 90 0" scale="1 1 1" ></a-entity>
+<a-entity gltf-model= "#palm"  position="90 -0.8 -30" rotation="0 90 0" scale="1.5 1.5 1.5" ></a-entity>
+<a-entity gltf-model= "#palm"  position="-1.6 -1.773 70" rotation="0 90 0" scale="1 1 1" ></a-entity>
+
+<a-entity gltf-model= "#palm"  position="-13 0.99 -73.32" rotation="0 90 0" scale="1.5 1.5 1.5" ></a-entity>
+<a-entity gltf-model= "#palm"  position="28 -1 5" rotation="0 90 0" scale="1.5 1.5 1.5" ></a-entity>
+<a-entity gltf-model= "#palm"  position="39 1.2 -30" rotation="0 90 0" scale="0.5 0.5 0.5" ></a-entity>
+<a-entity gltf-model= "#palm"  position="-46 1 7" rotation="0 90 0" scale="1.5 1.5 1.5" ></a-entity>
+
+<a-entity gltf-model= "#CONTENEDOR"  position="-54 -6 52" rotation="0 90 0" scale="10 9 15" ></a-entity>
+<a-entity gltf-model= "#delfin"  position="55.545 20.574 -79.44" rotation="0 0 0" scale="1.5 1.5 1.5" ></a-entity>
+<!-- <a-entity gltf-model= "#Monitor"  position="6 1 7" rotation="0 90 0" scale="0.060 0.070 0.060" ></a-entity> -->
+<a-entity gltf-model= "#ESCULTURA"  position="16 3.6 20.216" rotation="0 180 0" scale="5 5 5" ></a-entity>
+<a-entity gltf-model= "#ESCULTURA"  position="16 3.6 -6.618" rotation="0 90 0" scale="5 5 5" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="32 0.148 17.838" rotation="0 90 0" scale="5 5 5" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="79.433 -1.475 35.874" rotation="0 90 0" scale="-7 3 9" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="32 1 -34" rotation="0 90 0" scale="3 4 4" ></a-entity>
+
+<a-entity gltf-model= "#ROCASS"  position="-0.5 0.219 73.191" rotation="0 157 0" scale="5 6 4" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="-70 2.585 -71.175" rotation="0 157 0" scale="5 6 4" ></a-entity>
+
+<a-entity gltf-model= "#ROCASS"  position="-31 0.5 68" rotation="0 14 0" scale="6 6 6" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="-55 0.14 -31" rotation="0 15 0" scale="2 3 4" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="-14.03 2.998 -71.9" rotation="0 90 0" scale="3 4 4" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="-8.471 1.83 -71.94" rotation="0 40 0" scale="6 12 9" ></a-entity>
+<a-entity gltf-model= "#ROCASS"  position="8.812 .8 -75" rotation="0 24 0" scale="3 3 3" ></a-entity>
+
+<a-entity gltf-model= "#ROCASS"  position="88 0.2 -29.5" rotation="0 180 0" scale="7 4 9" ></a-entity>
+
+
+
+<a-entity geometry="primitive:plane;width:6;height:8;" position="-44 5 41" sclae="2.9 4 1" rotation="0 104.72 0" material="shader:gif;src:url(./assets/tron.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+<a-entity geometry="primitive:plane;width:15;height:15;" position="-63 13 -37" sclae="5 5 5" rotation="0 52.583 0" material="shader:gif;src:url(./assets/VHS.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+<a-entity geometry="primitive:plane;width:10;height:10;" position="-14.42 4 -28.8" sclae="6 6 6" material="shader:gif;src:url(./assets/COM.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+<a-entity geometry="primitive:plane;width:15;height:15;" position="-63 13 -37" sclae="5 5 5" rotation="0 52.583 0" material="shader:gif;src:url(./assets/UP.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+
+<a-box src="#alas"  position="26 7 -3" scale="2 3 2" rotation="0 -96 90" ></a-box>
+
+<a-box src="#alas"  position="26 7 12" scale="2 3 2" rotation="0 -96 90" ></a-box>
+
+<a-box src="#1999"  position="38.38 1.3 -29" scale=" 1 4 6 " rotation="0 0 90" ></a-box>
+<a-box src="#1999"  position="28 -0.5 4.9" scale="1 13 15" rotation="0 -6.4 90" ></a-box>
+<a-box src="#1999"  position="16.4 0 -72.75" scale="2 16 3" rotation="0 -2 90" ></a-box>
+<a-box src="#1999"  position="-45.29 -0.887 -18.39" scale="1 23 26" rotation="0 0 90" ></a-box>
+
+
+<a-box src="#1999"  position="-68 -0.5 -91" scale="1 12 4" rotation="0 0 90" ></a-box>
+<a-box src="#1999"  position="-15 -1 -82" scale="2 12 12" rotation="-1 0 90" ></a-box>
+<a-box src="#1999"  position="57 0.9 -82" scale="12 12 12" rotation="-60 53 90" ></a-box>
+
+<a-box src="#FON"  position="-45.22 4.469 41.446" scale="12 15 2" rotation="0 105.52 0" ></a-box>
+<a-box src="#CUR"  position="-46.78 27 -14" scale="5 5 5" rotation="0 -62.48 0" animation__1 = "property: position; to: 1 8-10; dur: 2000; easing: linear; loop: true" animation__2="property: rotation; to: 0 360 0; loop:true; dur: 2000"></a-box>
+<a-box src="#CUR"  position="-46.78 27 -14" scale="5 5 5" rotation="0 -65.48 0" animation__1 = "property: position; to: 4 18-10; dur: 2000; easing: linear; loop: true" animation__2="property: rotation; to: 0 360 0; loop:true; dur: 2000"></a-box>
+
+
+
+<a-box src="#botella"  position="21.288 4.5 39.991" scale="5 5 5" rotation="0 25 0" ></a-box>
+<a-box src="#desing"  position="-5.7 1.9 36" scale="5 5 5" rotation="0 16 0" ></a-box>
+
+
+<!-- METER UN GIF -->
+
+<a-entity geometry="primitive:plane;width:2;height:3;" position="-9.178 1.998 1.816" rotation="0 114.69 0" scale="0.800 0.450 1.000" material="shader:gif;src:url(./assets/private.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+
+<a-entity geometry="primitive:plane;width:2;height:3;" position="3 0 8" rotation="0 114.69 0" scale="0.800 0.450 1.000" material="shader:gif;src:url(./assets/huevo.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+<a-entity geometry="primitive:plane;width:2;height:3;" position="2 2 6" rotation="0 114.69 0" scale="0.800 0.450 1.000" material="shader:gif;src:url(./assets/vapw.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+
+<a-entity geometry="primitive:plane;width:2;height:3;" position="2 0 6" rotation="0 114.69 0" scale="0.800 0.450 1.000" material="shader:gif;src:url(./assets/acua.gif); repeat: 2 2;transparent: true;alphaTest:0.5"></a-entity>
+
+
+</a-scene>
+    
+</body>
+</html>
